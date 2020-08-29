@@ -39,7 +39,7 @@ public class MailServiceImpl implements MailService {
         Mail mail = new Mail(from, subject, to, content);
         mail.setReplyTo(from);
         mail.personalization.get(0).addSubstitution("-username-", "Alex Wang");
-        if (emails.getCc().length > 1) {
+        if (emails.getCc()!=null && emails.getCc().length > 1) {
             for (String cc : emails.getCc()) {
                 mail.personalization.get(0).addCc(new Email(cc));
             }
