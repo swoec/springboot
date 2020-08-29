@@ -1,5 +1,7 @@
 project based on Springboot mockito junit </br>
 integrate sendgrid for emails</br>
+notes: need to set the your sendgrid key</br>
+
 the JSON template for use for post is</br>
 {</br>
 	"sender": "swoecwang10@gmail.com",</br>
