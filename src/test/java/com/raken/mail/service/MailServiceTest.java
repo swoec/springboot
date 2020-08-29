@@ -2,6 +2,7 @@ package com.raken.mail.service;
 
 import com.raken.mail.model.Emails;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,7 +11,7 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 public class MailServiceTest {
 
-    @Autowired
+    @Mock
     private MailService mailService;
 
     @Test
