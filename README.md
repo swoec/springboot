@@ -12,4 +12,6 @@ to run the project use: mvn spring-boot:run </br>
 
 Link: http://localhost:8081/sendgrid?enrich=true
 
+add a photo to the letter to enrich the content.
+
 
