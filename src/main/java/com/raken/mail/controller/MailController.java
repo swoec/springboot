@@ -1,5 +1,9 @@
 package com.raken.mail.controller;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.raken.mail.filter.SenderFilter;
 import com.raken.mail.model.Emails;
@@ -7,11 +11,6 @@ import com.raken.mail.model.Photo;
 import com.raken.mail.service.MailService;
 import com.raken.mail.service.PhotoService;
 import com.raken.mail.template.HtmlTemplate;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MailController {

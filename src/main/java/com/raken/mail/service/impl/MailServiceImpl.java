@@ -1,7 +1,4 @@
 package com.raken.mail.service.impl;
-
-import com.raken.mail.model.Emails;
-import com.raken.mail.service.MailService;
 import com.sendgrid.Method;
 import com.sendgrid.Request;
 import com.sendgrid.Response;
@@ -14,6 +11,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import com.raken.mail.model.Emails;
+import com.raken.mail.service.MailService;
+
 
 import java.io.IOException;
 
